@@ -1,0 +1,51 @@
+<header>
+  <h1 id="title">Survey form</h1>
+  <p id="description">Let us know about your bio</p>
+</header>
+<main>
+  <form id="survey-form">
+    <label for="name" id="name-label" class="labels">*Name: </label>
+    <input type="text" id="name" class="input-field" name="name" required placeholder="Enter your name"></br>
+    <label for="email" id="email-label" class="labels" class="labels">*Email: </label>
+    <input type="email" id="email" class="input-field" name="email" required placeholder="Enter your email"><br>
+    <label for="age" id="number-label" class="labels">*Age: </label>
+    <input type="number" id="number" class="input-field" name="age" required placeholder="Age" min="1" max="125"><br>
+    <label for="currentPos" class="labels">Which best describes your position?</label>
+  <div class="right-tab">
+    <select id="dropdown" name="currentPos">
+    <option value disabled>Select an option</option>
+    <option value="student">Student</option> 
+    <option value="job">Fulltime employee</option>
+    <option value="learner">Fulltime learner</option>
+    <option value="preferNo">Prefer not to say</option>
+    <option value="other">Other</option>
+  </select></div>
+    <label for="gender" class="labels">Your gender?</label>
+    <div class="right-tab">
+      <input type="radio" name="gender" value="male" checked>Male
+      <input type="radio" name="gender" value="female">Female <br>
+    </div>
+    <label for="marriage" class="labels">Have you married yet?</label>
+    <div class="right-tab">
+      <input type="radio" name="marriage" value="yes" checked>Yes
+      <input type="radio" name="marriage" value="no">No<br>
+    </div>
+    <label for="skills" class="labels">Which skills in these do you have?</label><br>
+    <div class="right-tab">
+      <input type="checkbox" name="skills" value="cplus">C++<br>
+      <input type="checkbox" name="skills" value="java">Java<br>
+      <input type="checkbox" name="skills" value="dotNET">.NET<br>
+      <input type="checkbox" name="skills" value="html">HTML<br>
+      <input type="checkbox" name="skills" value="css">CSS<br>
+      <input type="checkbox" name="skills" value="javascript">JavaScript<br>
+      <input type="checkbox" name="skills" value="php">PHP<br>
+    </div>
+    <label for="about-yourself" class="labels">Can you write  some thing about yourself?</label>
+    <div class="right-tab">
+      <textarea id="text-area" name="about-yourself" style="height:50px;resize:vertical;" placeholder="your hobbies, your favorite things..."></textarea>
+    </div>
+  <div class="buttons">
+    <button id="submit" type="submit" class="button">Submit</button>
+  </div>
+  </form>
+</main>
